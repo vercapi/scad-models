@@ -5,8 +5,8 @@ $fn=50;
 //maaltafels, inner size, so adding the thickness
 thickness = 2;
 width = 47 + 2;
-depth = 150 + 2;
-height = 20;
+depth = 105 + 2;
+height = 35;
 gap_width = 10;
 difference(){
   box_with_lit(width, depth, height, thickness, 2);
@@ -15,6 +15,6 @@ difference(){
     cylinder(width+2, gap_width/2, gap_width/2, center = true);
   }
   translate([0,0,gap_width/2]){
-    cube([width+2,gap_width,20], center = true);
+    cube([width+2,gap_width,height], center = true);
   }
 }
