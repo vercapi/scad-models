@@ -24,9 +24,9 @@ difference() {
 }
 translate([100,0,0]) {
   difference () {
-    cylinder (r=radius+thickness, h=thread_length+thickness);
+    cylinder (r=radius+thickness+2, h=thread_length+thickness);
     translate([0,0,2]) {
-      metric_thread (diameter=(2*radius)+thickness+2, pitch=thread_pitch, length=thread_length+10, internal=true, n_starts=6);
+      metric_thread (diameter=(2*radius)+thickness+4, pitch=thread_pitch, length=thread_length+10, internal=true, n_starts=6);
     }
   }
 }
